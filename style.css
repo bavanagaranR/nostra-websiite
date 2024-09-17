@@ -1,0 +1,587 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.officebar {
+    display: flex;
+    background-color: #1D232C;
+    color: #E2E1E1;
+    justify-content: center;
+    font-size: 1.5vw;
+    padding: 5px;
+    align-items: center;
+}
+
+#close {
+    margin-left: 10%;
+    cursor: pointer;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    color: rgb(29, 35, 44);
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    padding: 1vw 20px;
+    z-index: 3;
+    font-family: Poppins, sans-serif;
+    margin: 0px;
+}
+
+.subnavbar {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+    color: rgb(29, 35, 44);
+    font-family: Poppins, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+.Navbar-menu {
+    display: none;
+}
+
+.subnavbar a {
+    text-decoration: none;
+    color: #1D232C;
+}
+
+.subnavbar a:hover {
+    text-decoration: underline;
+}
+
+.side-navbar {
+    margin-left: 0px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 50%;
+    height: 100%;
+    background-color: rgb(29, 35, 44);
+    color: rgb(226, 225, 225);
+    transition-duration: 1s;
+    z-index: 10;
+    padding: 20px;
+    margin: 0px;
+}
+
+.side-navbar-link {
+    margin-bottom: 30px;
+}
+
+/* slider */
+.box {
+    padding-left: 15px;
+    padding-right: 15px;
+    transition: 3s;
+
+}
+
+.slider {
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    position: relative;
+    border-radius: 5px;
+}
+
+
+
+.slider-Left {
+
+    color: #FFFFFF;
+    position: absolute;
+    top: 35%;
+    left: 5%;
+
+}
+
+.slider-Left i {
+    font-size: 10vw;
+}
+
+.slider-right {
+
+
+
+
+    color: #FFFFFF;
+    position: absolute;
+    top: 35%;
+    right: 5%;
+}
+
+.slider-right i {
+    font-size: 10vw;
+}
+
+.slider-image {
+
+    width: 100vw;
+    height: 509px;
+
+
+}
+
+.slider-content {
+
+    position: absolute;
+    color: slategray;
+    color: whitesmoke;
+
+    text-align: center;
+    width: 100%;
+    top: 20%;
+
+}
+
+.slider-content button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    color: black;
+    background-color: #f0bcc1;
+
+}
+
+.slider-content h1 {
+    font-size: 5vw;
+}
+
+.slider-image-container {
+    display: flex;
+    transition: 2s;
+}
+
+
+/* brands */
+
+.brands {
+    display: flex;
+    margin-top: 2vw;
+    justify-content: space-between;
+
+
+}
+
+.brand-names {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 2vw;
+    margin: 0px;
+    padding: 0px;
+}
+
+.brand-names img {
+    width: 4vw;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* about  */
+.about-us {
+    margin-top: 5vw;
+    margin-bottom: 2vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5vw;
+}
+
+.product {
+    border-radius: 5px;
+    background-color: rgb(242, 244, 247);
+    padding: 10px;
+    margin: 0px;
+}
+
+.about-product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    font-size: 1vw;
+
+
+}
+
+/* new arrival */
+.new-arrival {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2vw;
+
+
+}
+
+.new-arrival-container {
+    position: relative;
+}
+
+.new-arrival-container img {
+    border-radius: 2%;
+}
+
+
+.overlay {
+    border-radius: 2%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    top: 0;
+    opacity: 0.5;
+}
+
+
+.arrival-box {
+    transition: 3s;
+
+
+}
+
+.new-arrival button {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: 10px;
+    font-size: 1.2vw;
+    color: #1D232C;
+    border-radius: 10px;
+    position: absolute;
+    border: none;
+    top: 50%;
+    left: 18%;
+    z-index: 2;
+}
+
+
+/* most wanted */
+.most-wanted-box {
+    transition: 3s;
+    margin-top: 5vw;
+
+}
+
+.most-wanted {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2vw;
+    overflow-x: scroll;
+    gap: 20px;
+
+
+}
+
+.most-wanted img {
+    width: 20vw;
+    border-radius: 2%;
+
+    margin: 0px;
+    padding: 0px;
+}
+
+.most-wanted-container {
+    position: relative;
+}
+
+.like-button {
+    border-radius: 2%;
+    position: absolute;
+
+    bottom: 12%;
+    right: 5%;
+    margin: 0px;
+    padding: 0px;
+
+
+
+}
+
+.sale-overlay {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    font-size: 2vw;
+    background-color: red;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10%;
+}
+
+.limited-offer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(29, 35, 44);
+    color: rgb(226, 225, 225);
+    padding: 20px;
+    font-size: 2vw;
+}
+
+.limited-offer-img img {
+    width: 100%
+}
+
+.limited-offer-text {
+    padding: 5%;
+}
+
+.limited-offer-text button {
+    padding: 2.5% 5%;
+    margin-top: 10px;
+    font-size: 1.2vw;
+    color: rgb(29, 35, 44);
+    border-radius: 10px;
+}
+
+/* newsletter */
+
+.newsletter {
+    font-size: 2vw;
+    margin-top: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search {
+    padding: 11px;
+    width: 80vw;
+    margin-bottom: 10px;
+    border: 3px solid rgb(29, 35, 44);
+}
+
+.newsletter button {
+    margin-top: 10px;
+    font-size: 1.8vw;
+    color: rgb(226, 225, 225);
+    background-color: rgb(29, 35, 44);
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+}
+
+/* footer */
+.footer {
+    font-size: 2vw;
+    margin-top: 5vw;
+    padding: 40px;
+    background-color: rgb(29, 35, 44);
+    color: rgb(226, 225, 225);
+    box-sizing: border-box;
+    
+}
+
+.footer-icon-container i {
+    color: #ffffff;
+    width: 40px;
+    margin: 2vw;
+}
+
+
+/* colection  */
+
+/* filter section */
+
+.filter-section {
+
+    flex-basis: 25%;
+    position: relative;
+    font-size: 2vw;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    display: flex;
+}
+
+
+
+.filter-section-occasion {
+    margin-top: 3vw;
+    margin-bottom: 10px;
+}
+
+.filter-section-colors {
+    margin-top: 3vw;
+    margin-bottom: 10px;
+}
+
+.filter-section-arrivals {
+    margin-top: 3vw;
+    margin-bottom: 10px;
+}
+
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+
+/* colllections and serch */
+.product-section {
+
+    flex-basis: 75%;
+    position: relative;
+    padding: 10px;
+    margin: 0px;
+}
+
+
+.navbar-search {
+    border: 1px solid rgb(29, 35, 44);
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    width: 95%;
+    margin: 0px;
+}
+
+.searchs {
+
+    border: none;
+    width: 100%;
+    background-color: transparent;
+
+}
+
+.products {
+    margin-top: 2vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 1vw;
+
+}
+
+.product {
+    background-color: white;
+}
+
+.vertical-line {
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    border-image: initial;
+    border-left: 3px solid rgb(29, 35, 44);
+    height: 100%;
+    margin: 0px 20px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 0px;
+}
+
+@media screen and (max-width: 900px) {
+
+    /* Navbar */
+    .Navbar-menu {
+        display: block;
+    }
+
+    .subnavbar {
+        display: none;
+    }
+
+    .slider-image {
+
+
+        height: 253px;
+
+
+    }
+
+}
+
+/* contact form */
+.contactform {
+    background-color: rgb(29, 35, 44);
+    color: rgb(221, 221, 221);
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
+    width: 60vw;
+    margin: 10px auto auto;
+    padding: 5vw 10vw 5vw 5vw;
+}
+
+
+
+.form label {
+    display: block;
+    margin-bottom: 1vw;
+    margin: 0px;
+    padding: 0px;
+}
+
+.text {
+    width: 100%;
+    padding: 2vw;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 4px;
+    margin-bottom: 1vw;
+    font-size: 1vw;
+}
+
+.form textarea {
+    width: 100%;
+    padding: 2vw;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 4px;
+    margin-bottom: 1vw;
+    font-size: 1vw;
+    resize: vertical;
+    height: 10vh;
+
+}
+
+.submit {
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: rgb(0, 86, 179);
+}
+
+@media screen and (max-width: 400px) {
+    .slider-image {
+
+
+        height: 152px;
+
+
+    }
+}
+
+@media screen and (min-width: 901px) {
+    .side-navbar {
+        display: none;
+    }
+
+
+}
